@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>ROCK PAPER SCISSORS</h1>
+            <h4>( First to score 7 rounds wins the game ! )</h4>
+        </div>
+        
+        <h3 id="roundResult">
+
+        </h3>
+
+        <div id="buttonDiv">
+            <button id="resetButton">RESET</button>
+        </div>
+    </header>
+
+    <section class="mainSection">
+        <div class="playerSide">
+            <h1>PLAYER SIDE</h1>
+            <div class="yourScore">Your Score:
+                <span id="yourScore"></span>
+            </div>
+            <div id="playerPick">
+       
+            </div>
+        </div>
+  
+        <div class="computerSide">
+            <h1>COMPUTER SIDE</h1>
+            <div class="enemyScore">Enemy Score: 
+                <span id="enemyScore"></span>
+            </div>
+            <div id="computerPick">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="pickingSection">
+        <div class="playerSelect">
+            <h1>Choose a hand shape</h1>
+            <button  id="rockPlayer"><img src="images/rock.svg" alt="rock"></button>
+            <button  id="paperPlayer"><img src="images/paper.svg" alt="paper"></button>
+            <button  id="scissorsPlayer"><img src="images/scissors.svg" alt="scissors"></button>
+        </div>
+
+        <div class="matchHistory">
+            <h1>Match History</h1>
+            <div id="matchHistory">
+
+            </div>
+        </div>
+
+        <div class="computerSelect">
+            <h1>Enemy Selection</h1>
+            <img src="images/rock.png" alt="rock" id="rockComputer">
+            <img src="images/paper.png" alt="paper" id="paperComputer">
+            <img src="images/scissors.png" alt="scissors" id="scissorsComputer">
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
