@@ -71,7 +71,7 @@ function pickRock(){
         scissorsComputer.style.backgroundColor = "black";
     }
 
-    if(yourScore.textContent == 7){
+    if(yourScore.textContent == 10){
         resetBtn.textContent = "PLAY AGAIN";
         resetBtn.style.backgroundColor = "green";
         rockPlayer.setAttribute("disabled", "");
@@ -79,7 +79,7 @@ function pickRock(){
         scissorsPlayer.setAttribute("disabled", "");
         roundResult.textContent = "You win the game !";
 
-    } else if (enemyScore.textContent == 7){
+    } else if (enemyScore.textContent == 10){
         resetBtn.textContent = "PLAY AGAIN";
         resetBtn.style.backgroundColor = "green";
         rockPlayer.setAttribute("disabled", "");
@@ -130,7 +130,7 @@ function pickPaper(){
         scissorsComputer.style.backgroundColor = "black";
     }
 
-    if(yourScore.textContent == 7){
+    if(yourScore.textContent == 10){
         resetBtn.textContent = "PLAY AGAIN";
         resetBtn.style.backgroundColor = "green";
         rockPlayer.setAttribute("disabled", "");
@@ -138,7 +138,7 @@ function pickPaper(){
         scissorsPlayer.setAttribute("disabled", "");
         roundResult.textContent = "You win the game !";
     
-    } else if (enemyScore.textContent == 7){
+    } else if (enemyScore.textContent == 10){
         resetBtn.textContent = "PLAY AGAIN";
         resetBtn.style.backgroundColor = "green";
         rockPlayer.setAttribute("disabled", "");
@@ -190,7 +190,7 @@ function pickscissors(){
         scissorsComputer.style.backgroundColor = "black";
     }
  
-    if(yourScore.textContent == 7){
+    if(yourScore.textContent == 10){
         resetBtn.textContent = "PLAY AGAIN";
         resetBtn.style.backgroundColor = "green";
         rockPlayer.setAttribute("disabled", "");
@@ -198,7 +198,7 @@ function pickscissors(){
         scissorsPlayer.setAttribute("disabled", "");
         roundResult.textContent = "You win the game !";
     
-    } else if (enemyScore.textContent == 7){
+    } else if (enemyScore.textContent == 10){
         resetBtn.textContent = "PLAY AGAIN";
         resetBtn.style.backgroundColor = "green";
         rockPlayer.setAttribute("disabled", "");
