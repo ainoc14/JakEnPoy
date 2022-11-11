@@ -3,12 +3,11 @@
     margin: 0;
 }
 body{
-    max-height: 100vh;
+    min-height: 100vh;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
 }
 header{
-    /* background-color: rgb(113, 184, 184); */
     background: linear-gradient(90deg,  #1b9dc2, rgb(241, 74, 74));
     height: 20vh;
     display: flex;
@@ -25,7 +24,6 @@ header h1{
 }
 header h3{
     margin-top: 20px;
-    /* color: navy; */
 }
 header button{
     background-color:rgb(201, 74, 74);
@@ -88,14 +86,12 @@ header #roundResult{
 .rock, .scissors, .paper{
     height: 300px;
     border-radius: 50%;
-    transition: 2s;
 }
 .pickingSection{
     height: 30vh;
     display: flex;
     justify-content: space-between;
 }
-
 .playerSelect{
     padding: 0 50px;
     text-align: center;
@@ -150,6 +146,90 @@ header #roundResult{
     padding: 10px;
     border-radius: 50%;
 }
-
-
+@media (max-width: 1625px){
+    .playerSelect button, .computerSelect img{
+        padding: 0;
+    }
+}
+@media (max-width: 1460px){
+    .playerSelect, .computerSelect{
+        width: 32%;
+    }
+    .matchHistory{
+        width: 36%;
+    }
+    .playerSelect img, .computerSelect img{
+        height: 100px;
+    }
+    .playerSelect button, .computerSelect img{
+        margin-top: 70px;
+    }
+}
+@media (max-width: 1165px){
+    .computerSelect{
+        display: none;
+    }
+    .playerSelect, .matchHistory{
+        width: 50%;
+        padding: 0;
+    }
+    .playerSelect{
+        padding-top: 20px;
+    }
+}
+@media (max-width: 685px){
+    header h1{
+        font-size: 35px;
+    }
+    header h4{
+        font-size: 20px;
+    }
+    .playerSide img, .computerSide img{
+        height: 200px;
+    }
+    .playerSelect img{
+        height: 60px;
+    }
+    .win, .lose, .tie{
+        font-size: 10px;
+    }
+}
+@media (max-width: 484px){
+    header h1{
+        font-size: 25px;
+    }
+    header h4{
+        font-size: 15px;
+    }
+    .playerSide h1, .computerSide h1, .playerSelect h1{
+        font-size: 15px;
+    }
+}
+@media (max-width: 375px){
+    .playerSide img, .computerSide img{
+        height: 150px;
+        margin-top: 60px;
+    }
+    .playerSelect{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .playerSelect button{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 281px){
+    header{
+        height: auto;
+    }
+    .playerSide img, .computerSide img{
+        margin-top: 0;
+    }
+    .pickingSection{
+        height: auto;
+    }
+}
 
